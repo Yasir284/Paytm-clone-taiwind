@@ -5,38 +5,219 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <!-- ==========TAILWIND================= -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "480px",
+
+            md: "768px",
+
+            lg: "1024px",
+
+            xl: "1280px",
+
+            "2xl": "1536px",
+          },
+          extend: {
+            colors: {
+              dblue: "#012971",
+              lblue: "#f0fbfe",
+              blue: "#3ebbf2",
+              grey: "#f5f7fa",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- ==========FONT AWESOME================= -->
+    <script
+      src="https://kit.fontawesome.com/c10c2f8581.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ==========CSS================= -->
+    <style>
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #01baf2;
+      }
+      .scroll::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
   </head>
+
   <body>
     <!-- =====================NAVBAR======================== -->
     <section id="navbar">
-      <nav class="flex">
-        <img class="block w" src="./Images/paytm_logo.png" alt="paytm_logo" />
-        <div>
-          <ul>
-            <li>Paytm for Consumer</li>
-            <li>Paytm for Buisness</li>
-            <li>Company</li>
-            <li>Invester Relation</li>
-            <li>Career</li>
+      <nav class="flex flex-row justify-between items-center py-4 px-16">
+        <img
+          src="./Images/nav-icon.png"
+          alt="ham"
+          class="w-[5%] h-[5%] md:hidden"
+        />
+        <div class="w-[25%]">
+          <img class="block" src="./Images/paytm_logo.png" alt="paytm_logo" />
+        </div>
+
+        <div class="container hidden md:block">
+          <ul class="flex flex-row flex-wrap gap-6 items-center justify-center">
+            <li
+              class="font-medium text-base p-3 hover:bg-lblue transition-all duration-300 ease-in-out"
+            >
+              <a href="#"> Paytm for Consumer</a>
+            </li>
+            <li
+              class="font-medium text-[1rem] p-3 hover:bg-lblue transition-all duration-300 ease-in-out"
+            >
+              <a href="#"> Paytm for Buisness</a>
+            </li>
+            <li
+              class="font-medium text-[1rem] p-3 hover:bg-lblue transition-all duration-300 ease-in-out"
+            >
+              <a href="#"> Company</a>
+            </li>
+            <li
+              class="font-medium text-[1rem] p-3 hover:bg-lblue transition-all duration-300 ease-in-out"
+            >
+              <a href="#"> Invester Relation</a>
+            </li>
+            <li
+              class="font-medium text-[1rem] p-3 hover:bg-lblue transition-all duration-300 ease-in-out"
+            >
+              <a href="#"> Career</a>
+            </li>
           </ul>
         </div>
-        <div>
-          <button>
-            Sign in <img src="./Images/account.svg" alt="account" />
+
+        <div class="w-36 group">
+          <button
+            class="flex flex-row items-center bg-blue text-white trans font-medium rounded-3xl group-hover:bg-dblue transition-all duration-300 ease-in-out p-[1px] pl-2"
+          >
+            Sign in
+            <svg
+              width="34"
+              height="34"
+              viewBox="0 0 34 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="17"
+                cy="17"
+                r="17"
+                class="fill-dblue group-hover:fill-blue transition-all duration-300 ease-in-out"
+              />
+              <circle cx="17" cy="14.7331" r="7.93333" fill="white" />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4.07898 28.048C6.58399 23.4894 11.4312 20.3999 16.9999 20.3999C22.5687 20.3999 27.4159 23.4894 29.9209 28.048C26.8029 31.691 22.1711 33.9999 16.9999 33.9999C11.8288 33.9999 7.19693 31.691 4.07898 28.048Z"
+                fill="white"
+              />
+            </svg>
           </button>
         </div>
-        <img src="./Images/nav-icon.png" alt="ham" class="w-[2%] h-[2%]" />
       </nav>
     </section>
 
     <!-- =====================SECTION-1======================== -->
     <section class="sec-1">
-      <div>
-        <img class="" src="./Images/paytm_logo2.png" alt="paytm_logo2" />
-        <h1></h1>
+      <div class="bg-grey p-5 shadow-[0_2px_15px_grey_inset]">
+        <p class="text-center">
+          No Wallet KYC Required 😊 to pay using UPI on Paytm. Learn more.
+        </p>
       </div>
-      <div></div>
+
+      <div class="relative flex flex-col md:flex-row">
+        <div
+          class="flex flex-col justify-center items-center text-center p-8 md:max-w-[40%] md:items-start md:text-start"
+        >
+          <img
+            class="w-[22%] my-8 shadow-md md:w-[20%]"
+            src="./Images/paytm_logo2.png"
+            alt="paytm_logo2"
+          />
+          <h1 class="font-extrabold text-5xl">
+            India's Most-loved Payments App
+          </h1>
+          <p class="text-lg my-4">
+            Recharge & pay bills, book flights & movie tickets, open a savings
+            account, invest in stocks & mutual funds, and do a lot more.
+          </p>
+          <button
+            class="bg-black border-2 border-solid border-black text-white py-2 px-4 rounded-3xl hover:text-black hover:bg-white transition-all duration-500 ease-in-out"
+          >
+            Download Paytm App
+            <i class="fa-brands fa-apple"></i>
+            <i class="fa-brands fa-google-play"></i>
+          </button>
+        </div>
+
+        <div class="">
+          <img
+            class="block w-[70%] absolute right-0 md:top-12 md:w-[50%] lg:w-[35%]"
+            src="./Images/img1.webp"
+            alt="Images"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================SECTION-1======================== -->
+    <section class="sec-2">
+      <div>
+        <h1></h1>
+        <div class="flex flex-wrap flex-row">
+          <div class="flex flex-col items-center">
+            <img src="" alt="" />
+            <p></p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="" alt="" />
+            <p></p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="" alt="" />
+            <p></p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="" alt="" />
+            <p></p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="" alt="" />
+            <p></p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="" alt="" />
+            <p></p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="" alt="" />
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h1></h1>
+        <div class="flex flex-wrap flex-row">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
