@@ -1,6 +1,6 @@
 ![badge](https://img.shields.io/badge/MADE%20WITH-TAILWIND-blue)
 ![badge](https://img.shields.io/badge/TIME%20TAKEN-1%20day-red)
-[![badge](https://img.shields.io/badge/SEE%20DEMO%20-VISIT-green)](https://project15-08822.netlify.app/)
+[![badge](https://img.shields.io/badge/SEE%20DEMO%20-VISIT-green)](https://paytm-clone-by-yasir.netlify.app/)
 
 # Paytm Clone-With Tailwind
 
@@ -8,7 +8,7 @@
 
 - It took me 1 day to complete this project, as it was my first time using tailwind it was quite hard but was an amazing experience.
 
-  [![badge](https://img.shields.io/badge/LINK%20OF-PROJECT-blue)](https://project15-08822.netlify.app/)
+  [![badge](https://img.shields.io/badge/LINK%20OF-PROJECT-blue)](https://paytm-clone-by-yasir.netlify.app/)
 
 ---
 
@@ -31,6 +31,10 @@
 ![App Screenshot2](./project-screenshots/paytm-clone-ss3.png)
 ![App Screenshot2](./project-screenshots/paytm-clone-ss4.png)
 ![App Screenshot2](./project-screenshots/paytm-clone-ss5.png)
+
+- Mobile View
+
+  ![Mobile View](./project-screenshots/paytm-clone-mobilevs.png)
 
 ---
 
